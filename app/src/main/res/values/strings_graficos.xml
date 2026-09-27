@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Textos de los graficos de constancia. En su propio fichero para que el trabajo
+     en paralelo sobre strings.xml no provoque conflictos. -->
+<resources>
+    <string name="menos">menos</string>
+    <string name="mas">más</string>
+    <string name="minutos_por_semana">Minutos por semana</string>
+    <string name="contexto_racha">%1$d días en total · mejor racha: %2$d</string>
+    <string name="enero">enero</string>
+    <string name="febrero">febrero</string>
+    <string name="marzo">marzo</string>
+    <string name="abril">abril</string>
+    <string name="mayo">mayo</string>
+    <string name="junio">junio</string>
+    <string name="julio">julio</string>
+    <string name="agosto">agosto</string>
+    <string name="septiembre">septiembre</string>
+    <string name="octubre">octubre</string>
+    <string name="noviembre">noviembre</string>
+    <string name="diciembre">diciembre</string>
+</resources>

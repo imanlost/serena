@@ -1,0 +1,23 @@
+# Artefactos de compilacion: nunca se versionan.
+build/
+.gradle/
+*.apk
+*.aab
+*.ap_
+*.dex
+local.properties
+
+# Configuracion local del IDE.
+.idea/
+*.iml
+.cxx/
+captures/
+
+# Ficheros del sistema.
+.DS_Store
+*.log
+
+# Claves y secretos: no entran NUNCA en el repositorio.
+*.jks
+*.keystore
+*.properties.bak

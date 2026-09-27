@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Serena: reproductor de meditacion guiada con registro de practica.
+     NO declara android.permission.INTERNET: la app no tiene red y eso forma
+     parte de su definicion. Cualquier permiso nuevo debe justificarse aqui. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Media3 arrastra ACCESS_NETWORK_STATE en su manifest, aunque aqui no hay nada en
+         red: se elimina para que el APK no pida ni permisos de red pasivos. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        tools:node="remove" />
+
+    <!-- La biblioteca se lee con SAF (carpeta elegida por el usuario con permiso
+         persistente): NO se declara ningun permiso de almacenamiento. -->
+
+    <!-- Notificacion de reproduccion: en Android 13+ hace falta este permiso y SIN el el
+         reproductor no aparece al bajar la barra (comprobado en el movil del usuario). -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Audio en segundo plano. NO se declara INTERNET: la app no tiene red. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Serena">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Serena">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- La sesion de medios vive en el servicio para que el audio siga con la
+             pantalla apagada. exported=true es lo que permite que los controles del
+             sistema (auriculares, pantalla de bloqueo) se conecten a la sesion. -->
+        <service
+            android:name=".audio.ServicioSesion"
+            android:exported="true"
+            android:foregroundServiceType="mediaPlayback">
+            <intent-filter>
+                <action android:name="androidx.media3.session.MediaSessionService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

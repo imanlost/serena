@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Serena. Fondos calidos, un unico acento verde salvia.
+         Sin transparencias: todos los colores son opacos. -->
+    <color name="fondo">#FBFAF7</color>
+    <color name="icono_fondo">#2F6B57</color>
+</resources>

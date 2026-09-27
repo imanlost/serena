@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema base de la ventana. La paleta real (claro y oscuro) la define
+         Compose en ui/Tema.kt; aqui solo se evita la barra de accion y se
+         fija el fondo correcto antes de que Compose dibuje. -->
+    <style name="Theme.Serena" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/fondo</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Serena</string>
+    <string name="hoy">Hoy</string>
+    <string name="progreso">Progreso</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="empezar">Empezar</string>
+    <string name="minutos">minutos</string>
+    <string name="racha_actual">Racha actual</string>
+    <string name="racha_maxima">Mejor racha</string>
+    <string name="minutos_totales">Minutos en total</string>
+    <string name="dias">días</string>
+    <string name="tema">Tema</string>
+    <string name="tema_sistema">Sistema</string>
+    <string name="tema_claro">Claro</string>
+    <string name="tema_oscuro">Oscuro</string>
+    <string name="paleta">Paleta</string>
+    <string name="paleta_salvia">Salvia</string>
+    <string name="paleta_lavanda">Lavanda</string>
+    <string name="paleta_ambar">Ámbar</string>
+    <string name="paleta_oceano">Océano</string>
+    <string name="recordatorio">Recordatorio diario</string>
+    <string name="recordatorio_descripcion">Un aviso amable a la hora que elijas, con la opción de empezar directamente.</string>
+    <string name="fondo_sonoro">Sonido de fondo</string>
+    <string name="volumen_fondo">Mezcla</string>
+    <string name="sin_datos">Todavía no hay práctica registrada</string>
+    <!-- El resumen se arma con dos plurales: en singular hay que concordar ("1 día seguido"),
+         porque "1 dias seguidos" chirria. -->
+    <string name="resumen_hoy">%1$s · %2$s</string>
+    <plurals name="resumen_hoy_dias">
+        <item quantity="one">%1$d día seguido</item>
+        <item quantity="other">%1$d días seguidos</item>
+    </plurals>
+    <plurals name="resumen_hoy_minutos">
+        <item quantity="one">%1$d minuto</item>
+        <item quantity="other">%1$d minutos</item>
+    </plurals>
+    <!-- Cuantas pistas tiene cada carpeta, en la cabecera de la lista (va en plural). -->
+    <plurals name="grupo_pistas">
+        <item quantity="one">%1$d pista</item>
+        <item quantity="other">%1$d pistas</item>
+    </plurals>
+    <string name="ajustar_dial">Ajusta los minutos con el dial</string>
+    <string name="un_minuto_menos">Un minuto menos</string>
+    <string name="un_minuto_mas">Un minuto más</string>
+
+    <!-- Biblioteca y sesion -->
+    <string name="biblioteca">Biblioteca</string>
+    <string name="audios">Audios</string>
+    <!-- El nombre de la carpeta elegida lo da SAF tal cual (p. ej. "Music" o el de la
+         tarjeta SD) y se muestra sin traducir: es un nombre real de ruta. -->
+    <string name="biblioteca_sin_carpeta">Elige la carpeta donde tienes tus meditaciones.</string>
+    <string name="biblioteca_vacia">No he encontrado audios en esa carpeta.</string>
+    <string name="elegir_carpeta">Elegir carpeta</string>
+    <string name="carpeta_elegida">Carpeta elegida</string>
+    <string name="carpeta_ninguna">Ninguna</string>
+    <string name="volver_escanear">Volver a escanear</string>
+    <string name="escaneando">Buscando audios…</string>
+    <string name="pistas_encontradas">Pistas encontradas: %1$d</string>
+    <string name="ajustes_sonido">Sonido</string>
+    <string name="grupo_guiadas">Guiadas</string>
+    <string name="grupo_fondos">Fondos</string>
+    <string name="grupo_podcasts">Podcasts</string>
+    <string name="grupo_sueltas">Pistas sueltas</string>
+
+    <!-- Exportacion del historial -->
+    <string name="historial">Historial</string>
+    <string name="exportar_historial">Exportar historial (CSV)</string>
+    <string name="exportar_descripcion">Guarda todas las sesiones en un fichero que podrás abrir fuera de la app.</string>
+    <string name="exportar_ok">Historial guardado.</string>
+    <string name="exportar_error">No se ha podido guardar el historial.</string>
+    <string name="exportar_cancelado">No se ha guardado nada.</string>
+
+    <!-- Eleccion del fondo de una meditacion guiada -->
+    <string name="elegir_fondo_titulo">¿Con qué fondo quieres acompañarla?</string>
+    <string name="fondo_sin_fondo">Sin fondo</string>
+    <string name="empezar_ya">Empezar ya</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="fondo_por_defecto">Fondo por defecto</string>
+    <string name="fondo_por_defecto_descripcion">Se usa la primera vez, hasta que elijas un fondo en una meditación.</string>
+    <string name="volumen_fondo_ajuste">Volumen del fondo</string>
+    <string name="pausar">Pausar</string>
+    <string name="reanudar">Reanudar</string>
+    <string name="terminar">Terminar</string>
+    <string name="sesion_terminando">Terminando…</string>
+    <string name="sesion_preparate">Prepárate</string>
+
+    <!-- Ajustes de sonido del ritual -->
+    <string name="segundos_preparacion">Preparación antes de empezar</string>
+    <string name="segundos_vuelta">Pausa para volver al terminar</string>
+    <string name="gong">Gong al empezar y al terminar</string>
+    <string name="segundos">%1$d s</string>
+
+    <!-- Diario de sesiones (Seguimiento) -->
+    <string name="diario">Diario</string>
+    <string name="anadir_sesion">Añadir sesión</string>
+    <string name="ayer">Ayer</string>
+    <string name="incompleta">incompleta</string>
+    <string name="con_nota">con nota</string>
+    <string name="minutos_corto">%1$d min</string>
+    <string name="nota">Nota</string>
+    <string name="guardar">Guardar</string>
+    <string name="borrar">Borrar</string>
+    <string name="borrar_sesion_pregunta">¿Borrar esta sesión? No se puede deshacer.</string>
+    <string name="diario_vacio">Todavía no hay sesiones registradas.</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="fecha_etiqueta">Fecha: %1$s</string>
+    <string name="hora_etiqueta">Hora: %1$s</string>
+    <string name="meditacion">Meditación</string>
+</resources>
